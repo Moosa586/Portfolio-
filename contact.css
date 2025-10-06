@@ -1,0 +1,266 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #333;
+    color: white;
+ 
+}
+.header1{
+    font-size: 14 rem;
+    font-weight:normal;
+  
+    padding: 10px;
+    text-align: center;
+    background-color: #333;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* shadow added */
+}
+
+.header1 a{
+    text-decoration: none;
+    
+    font-family: 'Times New Roman', sserif;
+    text-align: center;
+      color: #6ee7b7;
+    padding: 14px 20px;
+    display: inline-block;
+}
+
+.header1 a:hover{
+
+     color: salmon;
+
+}
+.nam{
+    
+    text-align: left;
+    padding: 1 rem;
+    float: left;
+    
+    display: block;
+    position: relative;
+ 
+
+
+}
+.nam h1{
+    font-size: 30px;
+    font-family: 'Times New Roman', sserif;
+   
+    color: #6ee7b7;
+    padding: 14px 20px;
+}
+
+
+
+
+
+
+.footer{
+    background-color: #5c5c5c;
+    text-align: center;
+    color: #6ee7b7;
+    padding: 2rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 2rem;
+    
+
+}
+
+.footer p{
+    font-size: 20px;
+    font-family: 'Times New Roman', sserif;
+    color: #6ee7b7;
+    margin: 1rem;
+}
+
+.footer .social-links a{
+    text-decoration: none;
+    color: #6ee7b7;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+
+
+
+.profile-pic{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 2rem;
+    border: 4px solid #6ee7b7;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* shadow added */
+    text-align: center;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+   
+
+}
+
+
+
+
+
+
+.profile-pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #6ee7b7;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* shadow added */
+ 
+
+}
+
+
+.info{
+    margin-top: 2rem;
+    font-size: 20px;
+    font-family: 'Times New Roman', sserif;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    
+}   
+
+
+
+
+
+
+
+
+.marquee{
+  
+    color: white;
+    font-size: 20px;
+    padding: 1rem;
+    font-family: 'Times New Roman', sserif;
+    margin-top: 1rem;
+
+
+    position: absolute;
+    top: 3rem;  
+    width: 100%;
+    height: 3rem;
+    overflow: hidden;
+    box-sizing: border-box;
+  
+
+ 
+
+    animation: marquee 15s linear infinite;
+
+
+
+}
+
+
+
+/* ========== RESPONSIVE DESIGN ========== */
+@media (max-width: 1024px) {
+  .header1 a {
+    padding: 10px 12px;
+    font-size: 16px;
+  }
+
+  .profile-pic {
+    width: 180px;
+    height: 180px;
+  }
+
+  .info {
+    font-size: 18px;
+  }
+
+  .footer p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header1 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nam {
+    float: none;
+    text-align: center;
+  }
+
+  .header1 a {
+    display: block;
+    margin: 5px 0;
+  }
+
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+  }
+
+  .info h2 {
+    font-size: 22px;
+  }
+
+  .info p {
+    font-size: 16px;
+  }
+
+  .marquee {
+    font-size: 16px;
+    height: auto;
+    position: relative;
+    top: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  .header1 h1 {
+    font-size: 22px;
+  }
+
+  .header1 a {
+    font-size: 14px;
+  }
+
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+  }
+
+  .info h2 {
+    font-size: 18px;
+  }
+
+  .info p {
+    font-size: 14px;
+  }
+
+  .footer p {
+    font-size: 14px;
+  }
+
+  .social-links a {
+    display: block;
+    margin: 5px 0;
+  }
+}
+
